@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <a href="#home" class="navlink">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <br>
+        <br>
+
+        <section id="home">
+            <h1>Ahmad Tamim Maliji</h1>
+            <p>Welcome to my portfolio website! Below you can find information about me, my projects and contact me section!</p>
+            <br>
+        </section>
+
+        <section id="about">
+            <div class ="row">
+                <div class="column">
+                    <img src="images/profile.jpeg" alt="Profile Picture" class="profile-pic">
+                </div>
+                <div class="column">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a father of three wonderful children and a husband to my beautiful wife.
+                        <br>
+                        I am currently learning about web development and how to develop websites using HTML and CSS.
+                        <br>
+                        As a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>, I am learning about various programming languages and excited to see where it takes me!
+                        <br>
+                        I would love to work with you and help you with your next project, so please feel free to <a href="#contact">contact me</a>!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Insert github logo here -->
+
+            <p>Here is one of my projects that I am most proud of!</p>
+            <ul>
+                <li><a href="https://github.com/Ahmad987666/HTML_CSS_Course/tree/main/bootstrap4_project" target="_blank">Bootstrap Project</a></li>
+            </ul>
+            <br>
+            To view more of my projects, please visit my github <a href="https://github.com/Ahmad987666" target="_blank">here</a>.
+        </section>
+
+        <section id="contact">
+    <div class="row">
+        <div class="column">
+            <h2>Contact Me</h2>
+            <p>
+                I would love to hear from you! Whether you have a question, 
+                want to collaborate, or just want to say hello — 
+                feel free to send me a message below.
+            </p>
+
+            <!-- Contact Form -->
+            <form action="" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+
+        <div class="column">
+            <img src="images/contact.jpeg" alt="Contact Image" class="contact-pic">
+        </div>
+    </div>
+</section>
+
+
+
+        <footer class="Footer">
+            <p class="center">© 2026 Ahmad Tamim Maliji • Built with HTML & CSS</p>
+        </footer>
+    </body>
+</html>

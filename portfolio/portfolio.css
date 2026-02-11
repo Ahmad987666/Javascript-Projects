@@ -1,0 +1,279 @@
+/* =========================
+   Clean Portfolio CSS
+   Works with your HTML as-is
+   ========================= */
+
+/* Reset + Base */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #111827;
+  background: #f3f4f6;
+}
+
+/* Global Links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Fix for your footer class name (Footer) */
+.Footer {
+  padding: 18px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.center {
+  text-align: center;
+  margin: 0;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  background: rgba(17, 24, 39, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar a {
+  color: #f9fafb;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Optional: slightly highlight "Home" since you have class="navlink" there */
+.navlink {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* =========================
+   Sections (layout + spacing)
+   ========================= */
+section {
+  max-width: 980px;
+  margin: 22px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+    /* Section Hover Effect */
+section {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+  border: 1px solid transparent;
+}
+
+section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+  border: 1px solid #2563eb;
+}
+
+
+/* Section headings */
+h1, h2 {
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 26px;
+  color: #111827;
+}
+
+/* =========================
+   Home Section
+   ========================= */
+#home {
+  text-align: center;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 55%, #0b1220 100%);
+  color: #f9fafb;
+}
+
+#home p {
+  max-width: 720px;
+  margin: 10px auto 0;
+  color: rgba(249, 250, 251, 0.92);
+  font-size: 18px;
+}
+
+/* =========================
+   Row / Columns
+   (Your HTML uses .row and .column)
+   ========================= */
+.row {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* =========================
+   Images
+   ========================= */
+.profile-pic {
+  width: 100%;
+  max-width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.10);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.03);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.16);
+}
+
+/* =========================
+   Projects
+   ========================= */
+#projects ul {
+  padding-left: 18px;
+}
+
+#projects li {
+  margin: 10px 0;
+}
+
+/* Make the project link feel like a “pill button” */
+#projects a {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+#projects a:hover {
+  background: #dbeafe;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   Contact Form
+   ========================= */
+.contact-form {
+  margin-top: 18px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* Submit */
+.contact-form input[type="submit"] {
+  margin-top: 18px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 14px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 700px) {
+  section {
+    margin: 14px 12px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .profile-pic {
+    height: 280px;
+  }
+}
