@@ -1,96 +1,177 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
-        <title>My Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="portfolio.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Ahmad Tamim Maliji Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+</head>
 
-    <body>
-        <nav class="navbar">
-            <a href="#home" class="navlink">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<body>
 
-        <br>
-        <br>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#home" class="navlink">Home</a>
+        <a href="#slideshow">Slideshow</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="contact">Contact</a>
+    </nav>
 
-        <section id="home">
-            <h1>Ahmad Tamim Maliji</h1>
-            <p>Welcome to my portfolio website! Below you can find information about me, my projects and contact me section!</p>
-            <br>
-        </section>
+    <br><br>
 
-        <section id="about">
-            <div class ="row">
-                <div class="column">
-                    <img src="images/profile.jpeg" alt="Profile Picture" class="profile-pic">
-                </div>
-                <div class="column">
-                    <h2>About Me</h2>
-                    <p>
-                        I am a father of three wonderful children and a husband to my beautiful wife.
-                        <br>
-                        I am currently learning about web development and how to develop websites using HTML and CSS.
-                        <br>
-                        As a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>, I am learning about various programming languages and excited to see where it takes me!
-                        <br>
-                        I would love to work with you and help you with your next project, so please feel free to <a href="#contact">contact me</a>!
-                    </p>
-                </div>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Ahmad Tamim Maliji</h1>
+        <p>
+            Welcome to my portfolio website! Below you can find information about me, 
+            my projects and how to contact me.
+        </p>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow">
+        <h2>Slideshow</h2>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img class="slide-img" src="images/profile.jpeg" alt="Profile slide">
+                <div class="slide-text">Hi, I'm Ahmad — welcome to my portfolio!</div>
             </div>
-        </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <!-- Insert github logo here -->
+            <div class="mySlides fade">
+                <img class="slide-img" src="images/code.jpg" alt="Skills slide">
+                <div class="slide-text">I'm learning HTML, CSS, and JavaScript.</div>
+            </div>
 
-            <p>Here is one of my projects that I am most proud of!</p>
-            <ul>
-                <li><a href="https://github.com/Ahmad987666/HTML_CSS_Course/tree/main/bootstrap4_project" target="_blank">Bootstrap Project</a></li>
-            </ul>
-            <br>
-            To view more of my projects, please visit my github <a href="https://github.com/Ahmad987666" target="_blank">here</a>.
-        </section>
+            <div class="mySlides fade">
+                <img class="slide-img" src="images/contactMe.jpg" alt="Contact slide">
+                <div class="slide-text"><a class="contact">Contact me now!</a></div>
+            </div>
 
-        <section id="contact">
-    <div class="row">
-        <div class="column">
-            <h2>Contact Me</h2>
-            <p>
-                I would love to hear from you! Whether you have a question, 
-                want to collaborate, or just want to say hello — 
-                feel free to send me a message below.
-            </p>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
 
-            <!-- Contact Form -->
+        </div>
+
+        <div class="dots">
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="row">
+            <div class="column">
+                <img src="images/profile.jpeg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <div class="column">
+                <h2>About Me</h2>
+                <p>
+                    I am a father of three wonderful children and a husband to my beautiful wife.
+                    <br><br>
+                    I am currently learning web development using HTML, CSS, and JavaScript.
+                    <br><br>
+                    As a student of 
+                    <a href="https://www.learncodinganywhere.com" target="_blank">
+                        The Tech Academy
+                    </a>, 
+                    I am gaining experience in programming and excited to grow my skills.
+                    <br><br>
+                    I would love to work with you on your next project, so feel free to 
+                    <a class="contact">contact me</a>!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <p>Here is one of my projects that I am most proud of:</p>
+
+        <ul>
+            <li>
+                <a href="https://github.com/Ahmad987666/HTML_CSS_Course/tree/main/bootstrap4_project" target="_blank">
+                    Bootstrap Project
+                </a>
+            </li>
+        </ul>
+
+        <p>
+            To view more of my projects, please visit my GitHub 
+            <a href="https://github.com/Ahmad987666" target="_blank">here</a>.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="row">
+            <div class="column">
+                <h2>Contact Me</h2>
+                <p>
+                    I would love to hear from you! Whether you have a question,
+                    want to collaborate, or just want to say hello —
+                    feel free to send me a message below.
+                </p>
+
+                <form action="" method="POST" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+
+            <div class="column">
+                <img src="images/contact.jpeg" alt="Contact Image" class="contact-pic">
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Pop-Up Button -->
+    <button class="pop-up-button" id="openContact">CONTACT</button>
+
+    <!-- Pop-Up Contact Form -->
+    <div class="form-popup" id="myForm">
+        <div class="form-container">
+
+            <h2>Contact</h2>
+
             <form action="" method="POST" class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="popup-name">Name:</label>
+                <input type="text" id="popup-name" name="name" placeholder="Enter your name" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                <label for="popup-email">Email:</label>
+                <input type="email" id="popup-email" name="email" placeholder="Enter your email" required>
+
+                <label for="popup-message">Message:</label>
+                <textarea id="popup-message" name="message" placeholder="Write your message here..." required></textarea>
 
                 <input type="submit" value="Send Message">
+                <button type="button" class="close-btn cancel">Close</button>
+
             </form>
         </div>
-
-        <div class="column">
-            <img src="images/contact.jpeg" alt="Contact Image" class="contact-pic">
-        </div>
     </div>
-</section>
 
+    <!-- Footer -->
+    <footer class="Footer">
+        <p class="center">© 2026 Ahmad Tamim Maliji • Built with HTML, CSS & JavaScript</p>
+    </footer>
 
+    <script src="portfolio.js"></script>
 
-        <footer class="Footer">
-            <p class="center">© 2026 Ahmad Tamim Maliji • Built with HTML & CSS</p>
-        </footer>
-    </body>
+</body>
 </html>
